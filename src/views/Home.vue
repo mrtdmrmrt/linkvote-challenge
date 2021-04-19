@@ -159,12 +159,9 @@ export default {
       this.removeCardData = item;
     },
     removeCard() {
-      let tmpLinks = [];
-
-      this.paginationData.querySet = this.paginationData.querySet.filter((card) => card.id != this.removeCardData.id);
-      this.links[0].data = this.paginationData.querySet
+      this.links[0].data = this.links[0].data.filter((card) => card.id != this.removeCardData.id);
+      this.pagination(this.links[0].data, 1, 5);
       localStorage.setItem('links', JSON.stringify(this.links));
-      this.links = tmpLinks;
       this.isRemove = true;
       this.closeModal();
     },
