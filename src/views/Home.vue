@@ -161,9 +161,9 @@ export default {
     removeCard() {
       let tmpLinks = [];
 
-      tmpLinks = this.links.filter((card) => card.id != this.removeCardData.id);
-
-      localStorage.setItem('links', JSON.stringify(tmpLinks));
+      this.paginationData.querySet = this.paginationData.querySet.filter((card) => card.id != this.removeCardData.id);
+      this.links[0].data = this.paginationData.querySet
+      localStorage.setItem('links', JSON.stringify(this.links));
       this.links = tmpLinks;
       this.isRemove = true;
       this.closeModal();
