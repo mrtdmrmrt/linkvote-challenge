@@ -1,0 +1,12 @@
+@import "./base/normalize.scss";
+@import "./base/utilities.scss";
+@import "./base/base.scss";
+
+@import './components/header.scss';
+@import './components/toast.scss';
+
+@import './views/home.scss';
+@import './views/addlink.scss';
+
+@import './animations/fade.scss';
+@import './animations/modal.scss';

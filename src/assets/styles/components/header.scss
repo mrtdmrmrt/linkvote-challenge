@@ -1,0 +1,42 @@
+ .header__container {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+
+     margin: 0 1.5rem 0 2rem;
+     padding: 1.5rem 0 1rem 0;
+
+     border-bottom: 1px solid #a4a4a4;
+
+     &--title {
+         font-size: 3rem;
+         font-weight: 600;
+
+         &-main {
+             color: #A4A4A4;
+         }
+
+         &-extension {
+             color: #6E6E6E;
+         }
+     }
+
+     &--subtitle {
+         font-size: 2rem;
+
+         &-first {
+             color: #000000;
+             font-weight: 600;
+         }
+
+         &-second {
+             color: #4A4A4A;
+             font-weight: 100;
+         }
+
+         &-third {
+             color: #333333;
+             font-weight: 400;
+         }
+     }
+ }

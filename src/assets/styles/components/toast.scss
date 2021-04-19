@@ -1,0 +1,22 @@
+    .toast__container {
+        position: absolute;
+        top: -50px;
+        left: 160px;
+        min-width: 200px;
+        height: 60px;
+        margin: auto;
+        border: 1px solid #004440;
+        background-color: #E5ECEB;
+        color: #336966;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 1px 1px 4px #000;
+        opacity: 1;
+        transition: opacity 1s ease-in-out;
+    }
+
+    .duration {
+        opacity: 0 !important;
+    }
