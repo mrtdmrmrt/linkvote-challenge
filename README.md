@@ -20,5 +20,10 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Unit Test (Jest)
+```
+npm run test
+```
+
+### Customize Website
+See [Website](http://md-linkvote.surge.sh/#/).
